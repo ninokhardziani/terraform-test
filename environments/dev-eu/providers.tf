@@ -9,7 +9,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket       = "nino-state-s3-lock-12"
+    bucket       = "terraform-test-123450600"
     key          = "dev/eu/terraform.tfstate"
     region       = "us-east-1" # region the state BUCKET lives in, not eu-west-1
     use_lockfile = true        # native S3 state locking (Terraform >= 1.10), no DynamoDB needed
